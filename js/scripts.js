@@ -1,12 +1,12 @@
 var DOB=function(century, year, month, day){
 return ((century/4)-2*century-1)+(5*year/4)+(26*(month+1)/10)+day;
 };
-var century=parseInt(prompt('century:'));
-var year=parseInt(prompt('year:'));
-var month=parseInt(prompt('month:')).;
-var day=parseInt(promt('day:'));
+var century=parseInt(prompt("enter century:"));
+var year=parseInt(prompt("enter year:"));
+var month=parseInt(prompt("enter month:"));
+var day=parseInt(prompt("enter day:"));
 var result=DOB(century, year, month, day)%7;
-alert(result);
+alert(result); 
 
 //let sunday=0
 //let monday=1
