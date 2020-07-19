@@ -6,7 +6,8 @@ var year=parseInt(prompt("enter year:"));
 var month=parseInt(prompt("enter month:"));
 var day=parseInt(prompt("enter day:"));
 var result=DOB(century, year, month, day)%7;
-alert(result); 
+var h1=document.createElement("h1");
+var resultText=document.createTextNode("Your Ghananian name is" + result + "!");
 
 //let sunday=0
 //let monday=1

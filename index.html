@@ -11,6 +11,7 @@
       <div class="jumbotron">
         <h1>Find out your Ghananian name with your day of birth!</h1>
       </div>
+      <script src="js/scripts.js"></script>
       <form class="form" action="index.html" method="get">
       <div>
         <label for="century">century of birth</label>
@@ -37,8 +38,14 @@
         <label for="male">M</label>
         <input type="radio" name="Gender" value="male" id="male">
       </div>
-      <button class="button" name="Submit" onclick="DOB">Submit</button>
-      <script src="js/scripts.js"></script>
+      <div class="container">
+        <div class="submit button">
+          <button class="button" name="Submit">Submit</button>
+        </div>
+        <div class="reset button">
+          <button type="button" name="button">Reset</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>
