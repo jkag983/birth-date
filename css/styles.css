@@ -19,6 +19,6 @@ body {
   margin: 4px 2px;
   cursor: pointer;
 }
-.form {
-  padding-left: 20px;
+.containers {
+  text-align: center;
 }
