@@ -5,20 +5,30 @@
     <meta charset="utf-8">
     <title>DAY OF BIRTH CALCULATOR</title>
   </head>
+  <script src="js/scripts.js"></script>
   <body>
     <h1>Find out your Ghananian name with your day of birth!</h1>
     <form class="" action="index.html" method="get">
       <div>
         <label for="year">Year of birth</label>
-        <input type="year" name="year" value="" id="year" required>
+        <input type="dateyear" name="year" id="year" required>
       </div>
       <div>
         <label for="month">Month of birth</label>
-        <input type="month" name="month" value="" id="month" required>
+        <input type="datemonth" name="month" id="month" required>
       </div>
       <div>
-        <label for="day">Date of birth</label>
-        <input type="" name="day" value="" id="day" required>
+        <label for="day">Day of birth</label>
+        <input type="dateday" name="day" id="day" required>
+      </div>
+        <h2>Gender:</h2>
+      <div class="checkbox">
+        <label for="female">F</label>
+        <input type="radio" name="Gender" value="female" id="female">
+      </div>
+      <div class="checkbox">
+        <label for="male">M</label>
+        <input type="radio" name="Gender" value="male" id="male">
       </div>
       <button class="submit" name="Submit">Submit</button>
   </body>
