@@ -8,18 +8,22 @@
   <body>
     <script src="js/scripts.js"></script>
     <h1>Find out your Ghananian name with your day of birth!</h1>
-    <form class="" action="index.html" method="get">
+    <form class="form" action="index.html" method="get">
+      <div>
+        <label for="century">century of birth</label>
+        <input type="century" name="century" id="century" required><br/><br/>
+      </div>
       <div>
         <label for="year">Year of birth</label>
-        <input type="dateyear" name="year" id="year" required><br/><br/>
+        <input type="year" name="year" id="year" required><br/><br/>
       </div>
       <div>
         <label for="month">Month of birth</label>
-        <input type="datemonth" name="month" id="month" required><br><br/>
+        <input type="mon" name="month" id="month" required><br><br/>
       </div>
       <div>
         <label for="day">Day of birth</label>
-        <input type="dateday" name="day" id="day" required><br><br/>
+        <input type="day" name="day" id="day" required><br><br/>
       </div>
         <h2>Gender:</h2>
       <div class="checkbox">
@@ -31,5 +35,6 @@
         <input type="radio" name="Gender" value="male" id="male">
       </div>
       <button class="submit" name="Submit">Submit</button>
+      <input type="text" name="result" id="result">
   </body>
 </html>
