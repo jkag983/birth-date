@@ -11,8 +11,7 @@
       <div class="jumbotron">
         <h1>Find out your Ghananian name with your day of birth!</h1>
       </div>
-      <script src="js/scripts.js"></script>
-      <form class="form" action="index.html" method="get">
+      <form class="form" action="/" method="get">
       <div>
         <label for="century">century of birth</label>
         <input type="century" name="century" id="century" required><br/><br/>
@@ -46,6 +45,19 @@
           <button type="button" name="button">Reset</button>
         </div>
         <h2></h2>
+        <script>
+        var DOB=function(century, year, month, day)
+        {
+        return ((century/4)-2*century-1)+(5*year/4)+(26*(month+1)/10)+day;
+        var century=document.getElementById("century").value;
+        var year=document.getElementById("year").value;
+        var month=document.getElementById("month").value;
+        var day=document.getElementById("day").value;
+        var result=DOB(century, year, month, day)%7;
+        var h2=document.createElement("h2");
+        var resultText=document.createTextNode("Your Ghananian name is" + result + "!");
+        }
+        </script>
       </div>
     </div>
   </body>
