@@ -7,12 +7,14 @@
     <title>DAY OF BIRTH CALCULATOR</title>
   </head>
   <body>
+    <script src="js/scripts.js"></script>
     <div class="containers">
       <div class="jumbotron">
         <h1>Find out your Ghananian name with your day of birth!</h1>
-        <label for="DOB">date of birth</label>
-        <input type="date" name="DOB" id="DOB" required><br/><br/>
       </div>
+      <form id="form" action="index.innerHTML" method="get">
+        <label for="DOB">Date of birth</label>
+        <input type="date" name="DOB" id="Date of birth" required>
         <h2>Gender:</h2>
       <div class="checkbox">
         <label for="female">F</label>
@@ -23,15 +25,9 @@
         <input type="radio" name="Gender" value="male" id="male">
       </div>
       <div class="container">
-        <div class="submit button">
-          <button onclick=""class="button" name="Submit">Submit</button>
-        </div>
-        <div class="reset button">
-          <button type="button" name="button">Reset</button>
-        </div>
-        <h2></h2>
-        <script type="js/scripts.js"></script>
+        <button onclick="DOB()">Click </button>
       </div>
+     </form>
     </div>
   </body>
 </html>
