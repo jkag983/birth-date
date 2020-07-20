@@ -10,23 +10,8 @@
     <div class="containers">
       <div class="jumbotron">
         <h1>Find out your Ghananian name with your day of birth!</h1>
-      </div>
-      <form class="form" action="js/script.js" method="get">
-      <div>
-        <label for="century">century of birth</label>
-        <input type="century" name="century" id="century" required><br/><br/>
-      </div>
-      <div>
-        <label for="year">Year of birth</label>
-        <input type="year" name="year" id="year" required><br/><br/>
-      </div>
-      <div>
-        <label for="month">Month of birth</label>
-        <input type="mon" name="month" id="month" required><br><br/>
-      </div>
-      <div>
-        <label for="day">Day of birth</label>
-        <input type="day" name="day" id="day" required><br><br/>
+        <label for="DOB">date of birth</label>
+        <input type="date" name="DOB" id="DOB" required><br/><br/>
       </div>
         <h2>Gender:</h2>
       <div class="checkbox">
@@ -39,25 +24,13 @@
       </div>
       <div class="container">
         <div class="submit button">
-          <button class="button" name="Submit">Submit</button>
+          <button onclick=""class="button" name="Submit">Submit</button>
         </div>
         <div class="reset button">
           <button type="button" name="button">Reset</button>
         </div>
         <h2></h2>
-        <script>
-        var DOB=function(century, year, month, day)
-        {
-        return ((century/4)-2*century-1)+(5*year/4)+(26*(month+1)/10)+day;
-        var century=document.getElementById("century").value;
-        var year=document.getElementById("year").value;
-        var month=document.getElementById("month").value;
-        var day=document.getElementById("day").value;
-        var result=DOB(century, year, month, day)%7;
-        var h2=document.createElement("h2");
-        var resultText=document.createTextNode("Your Ghananian name is" + result + "!");
-        }
-        </script>
+        <script type="js/scripts.js"></script>
       </div>
     </div>
   </body>

@@ -1,12 +1,7 @@
-var DOB=function(century, year, month, day){
-return ((century/4)-2*century-1)+(5*year/4)+(26*(month+1)/10)+day;
-var century=document.getElementById("century").value;
-var year=document.getElementById("year").value;
-var month=document.getElementById("month").value;
-var day=document.getElementById("day").value;
-var result=DOB(century, year, month, day)%7;
-var h2=document.createElement("h2");
-var resultText=document.createTextNode("Your Ghananian name is" + result + "!");
+function myFunction() {
+  var d = new Date();
+  var n = d.getDay()
+  document.getElementById("demo").innerHTML = n;
 };
 //let sunday=0
 //let monday=1
