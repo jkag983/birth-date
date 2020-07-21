@@ -23,3 +23,8 @@ body {
 .containers {
   text-align: center;
 }
+p {
+  color: #800080;
+  font-style: italic;
+  font-size: 15px;
+}
