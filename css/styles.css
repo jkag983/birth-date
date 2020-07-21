@@ -28,3 +28,12 @@ p {
   font-style: italic;
   font-size: 15px;
 }
+
+.male {
+  float: left;
+  padding-top: 170px;
+}
+.female {
+  float: right;
+  padding-top: 170px;
+}
